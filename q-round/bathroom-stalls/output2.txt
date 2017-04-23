@@ -1,0 +1,21 @@
+Case #1: 1 0
+Case #2: 1 0
+Case #3: 1 1
+Case #4: 0 0
+Case #5: 500 499
+
+<--- Last few GCs --->
+
+[28672:0x103000000]   152507 ms: Mark-sweep 1355.7 (1415.9) -> 1355.7 (1415.9) MB, 771.2 / 0.0 ms  allocation failure GC in old space requested
+[28672:0x103000000]   153709 ms: Mark-sweep 1355.7 (1415.9) -> 1355.7 (1377.9) MB, 1202.3 / 0.0 ms  last resort gc 
+[28672:0x103000000]   154565 ms: Mark-sweep 1355.7 (1377.9) -> 1355.7 (1377.9) MB, 855.3 / 0.0 ms  last resort gc 
+
+
+<--- JS stacktrace --->
+
+==== JS stack trace =========================================
+
+Security context: 0x3e5ace0c0d39 <JS Object>
+    2: push [/Users/victor_sy_wang/Developer/codejam2017/q-round/bathroom-stalls/heap.js:~56] [pc=0x36c2249802b0](this=0x23a93b798e61 <an Object with map 0x1ae81341bb19>,item=0x3a2b33db0911 <Number: 7.45058e+09>)
+    3: calc [/Users/victor_sy_wang/Developer/codejam2017/q-round/bathroom-stalls/bathroom-stalls2.js:~37] [pc=0x36c224981669](this=0x280d19cf2c99 <JS Global Object>,n=0x23a93b798ee9 <N...
+
